@@ -184,3 +184,49 @@ footer .social-links li a:hover { transform: translateY(-3px); color: var(--acce
    *, *::before, *::after { transition: none !important; animation: none !important; }
    .js-reveal .entry, .js-reveal .skill-group, .js-reveal .pub-list li { opacity: 1; transform: none; }
 }
+
+/* ==========================================================================
+   Capa de optimización + física
+   ========================================================================== */
+
+/* Fondos WebP (≈ 90 % menos peso). El JPG original de layout.css queda como respaldo. */
+header {
+   background-image: -webkit-image-set(url(../images/header_b.webp) 1x);
+   background-image: image-set(url(../images/header_b.webp) type("image/webp"), url(../images/header_b.jpg) type("image/jpeg"));
+}
+#testimonials {
+   background-image: image-set(url(../images/citas.webp) type("image/webp"), url(../images/citas.jpg) type("image/jpeg"));
+}
+@media only screen and (max-width: 767px) {
+   header { background-image: image-set(url(../images/header_b-mobile.webp) type("image/webp"), url(../images/header_b.jpg) type("image/jpeg")); }
+}
+/* background-attachment: fixed fuerza repintado en cada scroll y no funciona en iOS */
+@media (max-width: 1024px), (hover: none) {
+   #testimonials { background-attachment: scroll; }
+}
+
+/* Lienzos de física */
+.phys-canvas { position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none; display: block; }
+.hero-field { z-index: 1; }
+.wave-field { z-index: 0; opacity: .62;
+   -webkit-mask-image: linear-gradient(to right, #000 0%, rgba(0, 0, 0, .55) 55%, transparent 100%);
+           mask-image: linear-gradient(to right, #000 0%, rgba(0, 0, 0, .55) 55%, transparent 100%); }
+#testimonials .text-container { position: relative; z-index: 1; }
+
+/* Botón de pausa de animaciones */
+.phys-toggle {
+   position: fixed; left: 16px; bottom: 16px; z-index: 90; height: auto; margin: 0; padding: 9px 14px;
+   font: 11px/1 'opensans-bold', sans-serif; letter-spacing: 1.2px; text-transform: uppercase; color: #dfe7ec;
+   background: rgba(20, 22, 25, .78); border: 1px solid rgba(255, 255, 255, .18); border-radius: 999px; cursor: pointer;
+   -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); opacity: .72; transition: opacity .2s, background-color .2s;
+}
+.phys-toggle:hover, .phys-toggle:focus-visible { opacity: 1; background: rgba(17, 171, 176, .85); color: #fff; }
+
+/* Modo ligero (Ahorro de datos, 2G, <= 2 GB RAM o <= 2 núcleos): sin blur ni transiciones largas */
+.lite #nav-wrap.opaque { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(20, 22, 25, .96); }
+.lite .hero-role, .lite .phys-toggle { -webkit-backdrop-filter: none; backdrop-filter: none; }
+.lite .entry, .lite .skill-group, .lite .pub-list li { transition: none; }
+.lite .wave-field { opacity: .45; }
+
+@media (max-width: 767px) { .phys-toggle { left: 10px; bottom: 10px; padding: 8px 11px; font-size: 10px; } }
+@media print { .phys-canvas, .phys-toggle { display: none !important; } }

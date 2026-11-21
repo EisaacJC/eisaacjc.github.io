@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="es"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="es"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="es"> <!--<![endif]-->
 <head>
 
    <!--- Basic Page Needs
@@ -26,7 +26,11 @@
 
    <!-- Script
    ================================================== -->
+	<script src="js/perf.js"></script>
 	<script src="js/modernizr.js"></script>
+	<link rel="preload" as="image" href="images/header_b.webp" type="image/webp" media="(min-width: 768px)">
+	<link rel="preload" as="image" href="images/header_b-mobile.webp" type="image/webp" media="(max-width: 767px)">
+	<link rel="preload" as="font" type="font/woff" href="css/fonts/opensans/OpenSans-Bold-webfont.woff" crossorigin>
 
    <!-- Favicons
 	================================================== -->
@@ -191,7 +195,7 @@
                <div class="columns portfolio-item">
                   <div class="item-wrap">
                      <a href="#modal-hw-01" title="">
-                        <img alt="" src="images/portfolio/homework1.jpg">
+                        <img alt="" src="images/portfolio/homework1.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
                               <h5>Tarea 1</h5>
@@ -206,7 +210,7 @@
                <div class="columns portfolio-item">
                   <div class="item-wrap">
                      <a href="#modal-hw-02" title="">
-                        <img alt="" src="images/portfolio/homework2.jpg">
+                        <img alt="" src="images/portfolio/homework2.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
                               <h5>Tarea 2</h5>
@@ -221,7 +225,7 @@
                <div class="columns portfolio-item">
                   <div class="item-wrap">
                      <a href="#modal-hw-03" title="">
-                        <img alt="" src="images/portfolio/homework3.jpg">
+                        <img alt="" src="images/portfolio/homework3.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
                               <h5>Tarea 3</h5>
@@ -236,7 +240,7 @@
                <div class="columns portfolio-item">
                   <div class="item-wrap">
                      <a href="#modal-hw-04" title="">
-                        <img alt="" src="images/portfolio/homework4.jpg">
+                        <img alt="" src="images/portfolio/homework4.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
                               <h5>Tarea 4</h5>
@@ -279,7 +283,7 @@
          </div>
 
          <div id="modal-hw-03" class="popup-modal mfp-hide">
-            <img class="scale-with-grid" src="images/portfolio/modals/m-homework3.jpg" alt="" />
+            <img class="scale-with-grid" src="images/portfolio/modals/m-homework3.jpg" alt="" loading="lazy" decoding="async" />
             <div class="description-box">
                <h4>Tarea 3</h4>
                <p>Visualización.</p>
@@ -291,7 +295,7 @@
          </div>
 
          <div id="modal-hw-04" class="popup-modal mfp-hide">
-            <img class="scale-with-grid" src="images/portfolio/modals/m-homework4.jpg" alt="" />
+            <img class="scale-with-grid" src="images/portfolio/modals/m-homework4.jpg" alt="" loading="lazy" decoding="async" />
             <div class="description-box">
                <h4>Tarea 4</h4>
                <p>Espacio reservado para la cuarta tarea.</p>
@@ -323,7 +327,7 @@
                   <div class="item-wrap">
 
                      <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/python.jpg">
+                        <img alt="" src="images/portfolio/python.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Python para el análisis de datos</h5>
@@ -340,7 +344,7 @@
                   <div class="item-wrap">
 
                      <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/maths.jpg">
+                        <img alt="" src="images/portfolio/maths.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Análisis</h5>
@@ -357,7 +361,7 @@
                   <div class="item-wrap">
 
                      <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/optics.jpg">
+                        <img alt="" src="images/portfolio/optics.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Óptica de Fourier</h5>
@@ -374,7 +378,7 @@
                   <div class="item-wrap">
 
                      <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/ciencia.jpg">
+                        <img alt="" src="images/portfolio/ciencia.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Comunicación de la ciencia</h5>
@@ -391,7 +395,7 @@
                   <div class="item-wrap">
 
                      <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/redes.jpg">
+                        <img alt="" src="images/portfolio/redes.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Diseño web</h5>
@@ -408,7 +412,7 @@
                   <div class="item-wrap">
 
                      <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/mta.png">
+                        <img alt="" src="images/portfolio/mta.png" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Gestión de redes y cómputo</h5>
@@ -425,7 +429,7 @@
                   <div class="item-wrap">
 
                      <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/excel.jpg">
+                        <img alt="" src="images/portfolio/excel.jpg" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>Administración</h5>
@@ -442,7 +446,7 @@
                   <div class="item-wrap">
 
                      <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/github.png">
+                        <img alt="" src="images/portfolio/github.png" loading="lazy" decoding="async">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
           					      <h5>GitHub</h5>
@@ -465,7 +469,7 @@
 
          <div id="modal-01" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/originales/python.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/originales/python.webp" alt="" loading="lazy" decoding="async" />
 
 		      <div class="description-box">
 			      <h4>Data Analysis</h4>
@@ -481,7 +485,7 @@
 
          <div id="modal-02" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/originales/maths.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/originales/maths.webp" alt="" loading="lazy" decoding="async" />
 
 		      <div class="description-box">
 			      <h4>Análisis de problemas</h4>
@@ -514,7 +518,7 @@
 
          <div id="modal-04" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/originales/ciencia.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/originales/ciencia.webp" alt="" loading="lazy" decoding="async" />
 
 		      <div class="description-box">
 			      <h4>Comunicación de la ciencia</h4>
@@ -531,7 +535,7 @@
 
          <div id="modal-05" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/html5.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/modals/html5.jpg" alt="" loading="lazy" decoding="async" />
 
 		      <div class="description-box">
 			      <h4>Web Design</h4>
@@ -547,7 +551,7 @@
 
          <div id="modal-06" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/originales/redes.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/originales/redes.webp" alt="" loading="lazy" decoding="async" />
 
 		      <div class="description-box">
 			      <h4>Redes de computadoras</h4>
@@ -564,7 +568,7 @@
 
          <div id="modal-07" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/originales/excel.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/originales/excel.webp" alt="" loading="lazy" decoding="async" />
 
 		      <div class="description-box">
 			      <h4>Administración</h4>
@@ -580,7 +584,7 @@
 
          <div id="modal-08" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" loading="lazy" decoding="async" />
 
 		      <div class="description-box">
 			      <h4>Github</h4>
@@ -680,15 +684,15 @@
 	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
 	<div id="wowslider-container0">
 	<div class="ws_images"><ul>
-		<li><img src="data0/images/comptiamin.jpg" alt="comptia-min" title="comptia-min" id="wows0_0"/></li>
-		<li><img src="data0/images/mtamin.jpg" alt="mta-min" title="mta-min" id="wows0_1"/></li>
-		<li><img src="data0/images/escner_20200122_3.png" alt="Escáner_20200122 (3)" title="Escáner_20200122 (3)" id="wows0_2"/></li>
-		<li><img src="data0/images/escner_20200122_4.png" alt="Escáner_20200122 (4)" title="Escáner_20200122 (4)" id="wows0_3"/></li>
-		<li><img src="data0/images/escner_20200122_6.png" alt="Escáner_20200122 (6)" title="Escáner_20200122 (6)" id="wows0_4"/></li>
-		<li><img src="data0/images/escner_20200122_7.png" alt="Escáner_20200122 (7)" title="Escáner_20200122 (7)" id="wows0_5"/></li>
-		<li><img src="data0/images/escner_20200122_10.png" alt="Escáner_20200122 (10)" title="Escáner_20200122 (10)" id="wows0_6"/></li>
-		<li><a href="http://wowslider.net"><img src="data0/images/escner_20200122_5.png" alt="slider jquery" title="Escáner_20200122 (5)" id="wows0_7"/></a></li>
-		<li><img src="data0/images/concursomin.jpg" alt="concurso-min" title="concurso-min" id="wows0_8"/></li>
+		<li><img src="data0/images/comptiamin.webp" alt="comptia-min" title="comptia-min" id="wows0_0"/></li>
+		<li><img src="data0/images/mtamin.webp" alt="mta-min" title="mta-min" id="wows0_1"/></li>
+		<li><img src="data0/images/escner_20200122_3.webp" alt="Escáner_20200122 (3)" title="Escáner_20200122 (3)" id="wows0_2"/></li>
+		<li><img src="data0/images/escner_20200122_4.webp" alt="Escáner_20200122 (4)" title="Escáner_20200122 (4)" id="wows0_3"/></li>
+		<li><img src="data0/images/escner_20200122_6.webp" alt="Escáner_20200122 (6)" title="Escáner_20200122 (6)" id="wows0_4"/></li>
+		<li><img src="data0/images/escner_20200122_7.webp" alt="Escáner_20200122 (7)" title="Escáner_20200122 (7)" id="wows0_5"/></li>
+		<li><img src="data0/images/escner_20200122_10.webp" alt="Escáner_20200122 (10)" title="Escáner_20200122 (10)" id="wows0_6"/></li>
+		<li><a href="http://wowslider.net"><img src="data0/images/escner_20200122_5.webp" alt="slider jquery" title="Escáner_20200122 (5)" id="wows0_7"/></a></li>
+		<li><img src="data0/images/concursomin.webp" alt="concurso-min" title="concurso-min" id="wows0_8"/></li>
 	</ul></div>
 	<div class="ws_bullets"><div>
 		<a href="#" title="comptia-min"><span><img src="data0/tooltips/comptiamin.jpg" alt="comptia-min"/>1</span></a>
@@ -738,7 +742,6 @@
 
    <!-- Java Script
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
@@ -748,6 +751,7 @@
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
    <script src="js/reveal.js"></script>
+   <script src="js/physics.js" defer></script>
 
 </body>
 

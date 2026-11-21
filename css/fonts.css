@@ -4,6 +4,7 @@
  * Open Sans
 ================================================================================ */
 @font-face {
+    font-display: swap;
     font-family: 'opensans-regular';
     src: url('fonts/opensans/OpenSans-Regular-webfont.eot');
     src: url('fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -14,6 +15,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-italic';
     src: url('fonts/opensans/OpenSans-Italic-webfont.eot');
     src: url('fonts/opensans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -24,6 +26,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-light';
     src: url('fonts/opensans/OpenSans-Light-webfont.eot');
     src: url('fonts/opensans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -34,6 +37,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-light-italic';
     src: url('fonts/opensans/OpenSans-LightItalic-webfont.eot');
     src: url('fonts/opensans/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -44,6 +48,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-semibold';
     src: url('fonts/opensans/OpenSans-Semibold-webfont.eot');
     src: url('fonts/opensans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -54,6 +59,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-semibold-italic';
     src: url('fonts/opensans/OpenSans-SemiboldItalic-webfont.eot');
     src: url('fonts/opensans/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -64,6 +70,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-bold';
     src: url('fonts/opensans/OpenSans-Bold-webfont.eot');
     src: url('fonts/opensans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -74,6 +81,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-bold-italic';
     src: url('fonts/opensans/OpenSans-BoldItalic-webfont.eot');
     src: url('fonts/opensans/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -84,6 +92,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-extrabold';
     src: url('fonts/opensans/OpenSans-ExtraBold-webfont.eot');
     src: url('fonts/opensans/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -94,6 +103,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'opensans-extrabold-italic';
     src: url('fonts/opensans/OpenSans-ExtraBoldItalic-webfont.eot');
     src: url('fonts/opensans/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -108,6 +118,7 @@
  * Libre Baskerville
 ================================================================================ */   
 @font-face {
+    font-display: swap;
     font-family: 'librebaskerville-bold';
     src: url('fonts/librebaskerville/librebaskerville-bold-webfont.eot');
     src: url('fonts/librebaskerville/librebaskerville-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -118,6 +129,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'librebaskerville-italic';
     src: url('fonts/librebaskerville/librebaskerville-italic-webfont.eot');
     src: url('fonts/librebaskerville/librebaskerville-italic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -128,6 +140,7 @@
     font-style: normal;
 }
 @font-face {
+    font-display: swap;
     font-family: 'librebaskerville-regular';
     src: url('fonts/librebaskerville/librebaskerville-regular-webfont.eot');
     src: url('fonts/librebaskerville/librebaskerville-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -145,11 +158,13 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
    @font-face {
+    font-display: swap;
    font-family: 'opensans-semibold';
    src: url('fonts/opensans/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
    }
 
    @font-face {
+    font-display: swap;
    font-family: 'opensans-bold';
    src: url('fonts/opensans/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
    }

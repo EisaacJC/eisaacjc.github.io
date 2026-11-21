@@ -59,7 +59,7 @@
             <li class="current"><a class="smoothscroll" href="#home">Inicio</a></li>
             <li><a class="smoothscroll" href="#about">Acerca de mi</a></li>
 	         <li><a class="smoothscroll" href="#resume">Curriculum</a></li>
-            <li><a class="smoothscroll" href="#homework">Tareas</a></li>
+            <li><a class="smoothscroll" href="#projects">Proyectos</a></li>
             <li><a class="smoothscroll" href="#portfolio">Experiencia</a></li>
             <li><a class="smoothscroll" href="#testimonials">Filosofía</a></li>
             <li><a class="smoothscroll" href="#contact">Contacto</a></li>
@@ -181,134 +181,31 @@
    </section> <!-- Resume Section End-->
 <!-- Homework Section
    ================================================== -->
-   <section id="homework">
+   <section id="projects">
 
       <div class="row">
 
-         <div class="twelve columns collapsed">
+         <div class="twelve columns">
 
-            <h1>Tareas y Proyectos.</h1>
+            <h1>Proyectos</h1>
+            <p class="projects-lead">Selección de trabajos de mi currículum.</p>
 
-            <!-- homework-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-hw-01" title="">
-                        <img alt="" src="images/portfolio/homework1.jpg" loading="lazy" decoding="async">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Tarea 1</h5>
-                              <p>Por asignar</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-hw-02" title="">
-                        <img alt="" src="images/portfolio/homework2.jpg" loading="lazy" decoding="async">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Tarea 2</h5>
-                              <p>Por asignar</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-hw-03" title="">
-                        <img alt="" src="images/portfolio/homework3.jpg" loading="lazy" decoding="async">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Tarea 3</h5>
-                              <p>Por asignar</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-                     <a href="#modal-hw-04" title="">
-                        <img alt="" src="images/portfolio/homework4.jpg" loading="lazy" decoding="async">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Tarea 4</h5>
-                              <p>Por asignar</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-                  </div>
-               </div>
-
-            </div> <!-- homework-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-         <!-- Modal Popups
-         --------------------------------------------------------------- -->
-         <div id="modal-hw-01" class="popup-modal mfp-hide">
-            <img class="scale-with-grid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/LeNet-5_architecture.svg/2880px-LeNet-5_architecture.svg.png" alt="" />
-            <div class="description-box">
-               <h4>Tarea 1</h4>
-               <p>Taerea: LeNet-5 .</p>
-               <span class="categories"><i class="fa fa-tag"></i>Pending Assignment</span>
+            <div class="project-grid">
+               <article class="project-card"><div class="project-top"><span class="project-icon"><i class="fa fa-bolt" aria-hidden="true"></i></span><span class="project-meta">SUTSEM · 2021–2025</span></div><h3>Priorización de eventos críticos con LLMs</h3><p class="project-desc">Flujo basado en la API de Anthropic que automatiza el análisis y la priorización de eventos críticos.</p><p class="project-metric"><strong>~20 h/semana</strong> menos de revisión manual</p><ul class="chips project-tags"><li>Anthropic API</li><li>Python</li></ul></article>
+               <article class="project-card"><div class="project-top"><span class="project-icon"><i class="fa fa-bar-chart-o" aria-hidden="true"></i></span><span class="project-meta">SUTSEM · 2021–2025</span></div><h3>Aplicación de datos full-stack</h3><p class="project-desc">Desarrollada desde cero con Flask, Dash y HTML/CSS para monitorear volumen de solicitudes, distribución geográfica y tiempos de procesamiento, con control de acceso por roles (usuario, analista y administrador).</p><ul class="chips project-tags"><li>Flask</li><li>Dash</li><li>RBAC</li></ul></article>
+               <article class="project-card"><div class="project-top"><span class="project-icon"><i class="fa fa-exchange" aria-hidden="true"></i></span><span class="project-meta">NTT-DATA (cliente BBVA) · 2025–2026</span></div><h3>Migración de SAS a Python con LLMs</h3><p class="project-desc">Flujo con modelos de parsing clásicos y LLMs para migrar procesos de SAS a Python.</p><p class="project-metric"><strong>~67%</strong> menos esfuerzo de migración</p><ul class="chips project-tags"><li>LLMs</li><li>Parsing</li><li>SAS</li><li>Python</li></ul></article>
+               <article class="project-card"><div class="project-top"><span class="project-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="project-meta">IIIA-UV · 2022</span></div><h3>Pronóstico de ubicación tras pérdida de GPS</h3><p class="project-desc">Modelo predictivo con datos geoespaciales y series de tiempo para estimar la ubicación de vehículos tras perder la señal GPS y mitigar el riesgo de robo de activos logísticos.</p><ul class="chips project-tags"><li>Series de tiempo</li><li>Geoespacial</li></ul></article>
+               <article class="project-card"><div class="project-top"><span class="project-icon"><i class="fa fa-random" aria-hidden="true"></i></span><span class="project-meta">Instituto de Ciencias Físicas, UNAM · 2022</span></div><h3>Burbujas financieras con matrices aleatorias</h3><p class="project-desc">Teoría de Matrices Aleatorias aplicada a series de tiempo financieras para detectar la formación de burbujas y seguir el riesgo por sector, con patrones análogos a avalanchas en sistemas complejos.</p><ul class="chips project-tags"><li>Matrices aleatorias</li><li>Series de tiempo</li><li>Sistemas complejos</li></ul></article>
+               <article class="project-card"><div class="project-top"><span class="project-icon"><i class="fa fa-code-fork" aria-hidden="true"></i></span><span class="project-meta">CIAPP · 2026</span></div><h3>Circuitos cuánticos variacionales para MaxCut</h3><p class="project-desc">Comparación cuantitativa entre el diseño heurístico y el automático de circuitos cuánticos variacionales para el problema MaxCut.</p><ul class="chips project-tags"><li>Computación cuántica</li><li>VQC</li><li>MaxCut</li></ul></article>
             </div>
-            <div class="link-box">
-               <a class="popup-modal-dismiss">Cerrar</a>
-            </div>
+
+            <p class="projects-more"><a class="button" href="https://github.com/eisaacjc"><i class="fa fa-github"></i>Más en GitHub</a></p>
+
          </div>
 
-         <div id="modal-hw-02" class="popup-modal mfp-hide">
-            <img class="scale-with-grid" src="https://images.datacamp.com/image/upload/v1647442110/image3_nsnxp3.png" alt="" />
-            <div class="description-box">
-               <h4>Tarea 2</h4>
-               <p>RNN.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Pending Assignment</span>
-            </div>
-            <div class="link-box">
-               <a class="popup-modal-dismiss">Cerrar</a>
-            </div>
-         </div>
+      </div>
 
-         <div id="modal-hw-03" class="popup-modal mfp-hide">
-            <img class="scale-with-grid" src="images/portfolio/modals/m-homework3.jpg" alt="" loading="lazy" decoding="async" />
-            <div class="description-box">
-               <h4>Tarea 3</h4>
-               <p>Visualización.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Pending Assignment</span>
-            </div>
-            <div class="link-box">
-               <a class="popup-modal-dismiss">Cerrar</a>
-            </div>
-         </div>
-
-         <div id="modal-hw-04" class="popup-modal mfp-hide">
-            <img class="scale-with-grid" src="images/portfolio/modals/m-homework4.jpg" alt="" loading="lazy" decoding="async" />
-            <div class="description-box">
-               <h4>Tarea 4</h4>
-               <p>Espacio reservado para la cuarta tarea.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Pending Assignment</span>
-            </div>
-            <div class="link-box">
-               <a class="popup-modal-dismiss">Cerrar</a>
-            </div>
-         </div>
-
-      </div> <!-- row End -->
-
-   </section> <!-- Homework Section End-->
+   </section> <!-- Projects Section End-->
 
    <!-- Portfolio Section
    ================================================== -->

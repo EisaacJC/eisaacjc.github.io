@@ -1,7 +1,7 @@
 /* Revelado suave de tarjetas al entrar en pantalla.
    Sin IntersectionObserver o con "reduced motion" todo queda visible. */
 (function () {
-   var els = document.querySelectorAll('.entry, .skill-group, .pub-list li');
+   var els = document.querySelectorAll('.entry, .skill-group, .pub-list li, .project-card');
    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
    if (!('IntersectionObserver' in window) || reduce || !els.length) return;
    document.documentElement.className += ' js-reveal';

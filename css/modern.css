@@ -161,7 +161,7 @@ footer .social-links li a { transition: transform .2s ease, color .2s ease; disp
 footer .social-links li a:hover { transform: translateY(-3px); color: var(--accent); }
 
 /* ---------- Revelado suave al hacer scroll ---------- */
-.js-reveal .entry, .js-reveal .skill-group, .js-reveal .pub-list li {
+.js-reveal .entry, .js-reveal .skill-group, .js-reveal .pub-list li, .js-reveal .project-card {
    opacity: 0; transform: translateY(14px); transition: opacity .55s ease, transform .55s ease;
 }
 .js-reveal .is-visible { opacity: 1 !important; transform: none !important; }
@@ -182,7 +182,7 @@ footer .social-links li a:hover { transform: translateY(-3px); color: var(--acce
 @media (prefers-reduced-motion: reduce) {
    html { scroll-behavior: auto; }
    *, *::before, *::after { transition: none !important; animation: none !important; }
-   .js-reveal .entry, .js-reveal .skill-group, .js-reveal .pub-list li { opacity: 1; transform: none; }
+   .js-reveal .entry, .js-reveal .skill-group, .js-reveal .pub-list li, .js-reveal .project-card { opacity: 1; transform: none; }
 }
 
 /* ==========================================================================
@@ -230,3 +230,32 @@ header {
 
 @media (max-width: 767px) { .phys-toggle { left: 10px; bottom: 10px; padding: 8px 11px; font-size: 10px; } }
 @media print { .phys-canvas, .phys-toggle { display: none !important; } }
+
+/* ---------- Proyectos (antes "Tareas": placeholders sin imágenes) ---------- */
+#projects { background: var(--dark); padding: 96px 0 84px; overflow: hidden; }
+#projects h1 { font: 15px/24px 'opensans-semibold', sans-serif; text-transform: uppercase; letter-spacing: 3px; text-align: center; color: #fff; margin: 0 0 8px; }
+#projects .projects-lead { text-align: center; color: #aab5bd; margin: 0 0 44px; }
+.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.project-card {
+   display: flex; flex-direction: column; padding: 24px 22px 20px; border-radius: var(--radius);
+   background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .09);
+   transition: transform .25s ease, border-color .25s ease, background-color .25s ease, box-shadow .25s ease;
+}
+.project-card:hover { transform: translateY(-4px); border-color: rgba(17, 171, 176, .6); background: rgba(17, 171, 176, .07); box-shadow: 0 16px 36px rgba(0, 0, 0, .35); }
+.project-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.project-icon { flex: none; width: 40px; height: 40px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center;
+   font-size: 18px; color: #7ee8ec; background: rgba(17, 171, 176, .16); border: 1px solid rgba(17, 171, 176, .35); }
+.project-meta { font: 11px/1.4 'opensans-bold', sans-serif; letter-spacing: 1px; text-transform: uppercase; color: #8fa0aa; }
+.project-card h3 { margin: 0 0 8px; font: 18px/1.35 'opensans-bold', sans-serif; color: #fff; }
+.project-card .project-desc { margin: 0 0 14px; font-size: 14.5px; line-height: 1.7; color: #c3ccd3; }
+.project-metric { margin: 0 0 14px; padding: 10px 12px; border-radius: 10px; font-size: 13px; line-height: 1.4; color: #c3ccd3; background: rgba(17, 171, 176, .1); }
+.project-metric strong { display: block; font: 20px/1.2 'opensans-bold', sans-serif; color: #7ee8ec; }
+.project-card .project-tags { margin-top: auto; gap: 6px; }
+.project-card .chips li { padding: 5px 10px; font-size: 12px; color: #dfe7ec; background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .12); }
+.project-card .chips li:hover { color: #fff; border-color: var(--accent); }
+#projects .projects-more { text-align: center; margin: 40px 0 0; }
+#projects .projects-more .button { background: transparent; border: 1px solid rgba(255, 255, 255, .3); color: #fff; border-radius: 999px; padding: 0 26px; }
+#projects .projects-more .button:hover { background: #fff; color: var(--dark); }
+#projects .projects-more .button i { margin-right: 10px; }
+@media only screen and (max-width: 1023px) { .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media only screen and (max-width: 639px) { .project-grid { grid-template-columns: 1fr; } #projects { padding: 72px 0 64px; } }
